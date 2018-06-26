@@ -6,7 +6,7 @@ const CartItemsComponent = ({cartItemsList}) => {
         <div className="container">
             <h1>Items</h1>
             <ul>
-                {cartItemsList.map(item => (<CartItem key={item.product.id} item={item}/>))}
+                {cartItemsList.map((item, index) => (<CartItem key={item.id} item={item}/>))}
             </ul>
         </div>
     )
